@@ -1,0 +1,2 @@
+Another fairly simple problem. Just had to keep track of horizontal and depth values and add/subtract the input values based on the direction
+Part two was also pretty simple, with keeping track of a third and slightly modify the conditions for adding/subtracting the values

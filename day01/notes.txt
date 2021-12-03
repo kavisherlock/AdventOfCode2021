@@ -1,0 +1,2 @@
+Pretty easy problem to start with. Just had to compare the current value witht he previous one as we iterate through the input
+Part two wasn't much more difficult. Just had to compare three values instead of one
