@@ -1,0 +1,2 @@
+For the first problem, since I needed to find the most common bit in each position out of 1 and 0, I just simply added the digits at each position. And if the sum was greater than half of the total number of values, it meant 1 was more common. Else 0. Doing it that way, finding the gamma and epsilon values was easy
+Part 2 was a bit more complicated. For this, I made a function that gets the new set of values which match the most/least common bit in the given bit position and then iterated over each bit position. That gave the answers for the o2 and co2 ratings
