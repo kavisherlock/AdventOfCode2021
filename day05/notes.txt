@@ -1,0 +1,3 @@
+This one was simpler than I expected, especially part 2. In part 1, we essentially had to just lay down the horizontal and vertical pipes. Simple enough. I used a 2d array for the ocean floor and just looped through the pipes.
+I expected part 2 to be some weird navigation problem, but actually it just ended up being lay down the diagonal pipes. And actually, doing part 1 first meant a bunch of unnecessary code that I could reduce down
+Thanks to the bidirectioal nature of python's range function, I was able to write just four statements that handled both straight and diagonal pipes, by calculating the x and y directions to increment (1, -1, 0) and the number of points between the ends

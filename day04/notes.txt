@@ -1,0 +1,5 @@
+The first challenge in this problem was how to store the boards. There were two main actions needed per number drawn: mark the number on the board and check if a board has a bingo. The question was, what's the most efficient way to store the boards.
+I chose a simple array for each board, since each had exactly 25 numbers. A bit of string manipulation, and I had all my boards. Then I wrote the two functions I needed above, both in linear time wrt the number of elements in each board
+
+After that it was just playing the game. For part 1, I drew each number, marked it on each board and then checked it for a win. As soon as a board won, I calculated the score and returned.
+For part 2, I kept track of if a board had won yet. Once all boards had won, I calculated the score of the last board and returned
