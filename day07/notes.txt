@@ -1,0 +1,6 @@
+One might be tempted to use a simple loop to iterate over the crab positions and thanks for python's sum and map functions, quickly find the minimum fuels in both parts
+However, the problem can be solved quicker when one realises that the target position in part 1 is the median, and that in part 2 is the mean
+For part 1, the solution is simply sum(map(lambda x: abs(x-median), crabs)), that is, the sum of the absolute distance from the median of each position
+For part 2, it's only slightly more complicated when you realise that sum of numbers from 1 to n is n(n+1)/2: sum(map(lambda x: abs(x-mean) * (abs(x-mean) + 1) / 2, crabs))
+
+I think I'm most proud of this one given the simplicity of the solution :)
