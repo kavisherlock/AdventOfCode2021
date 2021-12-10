@@ -1,0 +1,3 @@
+Quite the standard programming problem for day 10 for validating a string of different kinds of brackets which I used a stack to solve.
+Part 1 was simple. Pushing all the opening brackets onto the stack and popping them off when they are the same. As soon as I find a closing bracket that doesn't match the top of the stack, I know it's invalid.
+Part 2 was actually used the same code as part 1. For valid strings, the stack had the leftover brackets from which I got the completion strings. Calculating the score was easy after that.
