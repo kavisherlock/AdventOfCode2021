@@ -1,0 +1,6 @@
+I can't believe I got this working first try, coding the first solution that came to my head flawlessly
+The idea was to define functions to take things one step at a time because on the whole, the problem was complicated because of the octupuses causing each other to flash within the same step, which as part 2 suggested, could chain to all the octopuses.
+So, my idea was simple. With each step, increment each octopus. Then see if there are any flashes. Make the flash happen. Then check again to see if the previous flash caused any more to flash. And so on until no one needs to flash anymore. To make sure no octoupus flashes twice, I set each's enery level to -100 after a flash and reset it to 0 at the end
+With that the hard parts were done.
+For part 1, all I needed to keep track of was the total number of flashes. Easy enough
+For part 2, I needed the number of flashes per step, and to see if that number ever reaches 100. Also easy
