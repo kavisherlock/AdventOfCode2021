@@ -1,0 +1,8 @@
+This was a tricky one. Well, part 2 was
+Part 1 was more straightforward and involved simple string manipulation. I had to go throught hen polymer and for each pair of adjacent elements, add the corresponding insertion to the new polymer. At the end, I just had to figure out the counts
+This gave me the correct answer for 10 steps, but as soon as I saw part 2 was to run it for 40, I knew this implementation, which increases the polymer size exponentially with each step, wouldn't work.
+After giving it some though, I realised all we care about are counts of each element so maybe I can only keep track of that and not the actual polymer. But that wouldn't work since we need to know adjacent elements in order to make the correct insertions.
+Then I tried looking for a pattern in the answers and even there I realised there wasn't really one other than a general exponential rise. And the answers changed based on the order of the initial polymer. So was there any getting away from keeping track of the full polymer?
+Well, given this is a solvable problem, of course there was. And the answer was to not keep track of the elements' but keep track of the pairs' counts instead
+From each pair, we know what the new pairs formed are. For example, for rule NN -> C, we know if 4 NNs exist in the polymer, after one step, we will have 0 NNs, 4 NCs, and 4 CNs.
+This way, I was able get all the pair counts after each step. Counting the elements from them was easy. I just had to remember to half them since each pair is overlapping (except the first and last ones). And there we had it
