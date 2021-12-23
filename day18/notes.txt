@@ -1,0 +1,13 @@
+What a problem this was. So many things to do. My best option was to break everything down into small functions and take them one at a time
+Firstly, I had to decide how to store the snailfish. Since I was using python, I decided to use a list, since I can store both characters and ints in it. A quick function to convert a snailfish string to list was easy enough
+Then, to find the exlosion index, I essentially had to look for a full pair that has at least 5 opening brackets before it without their corresponding closing brackets. Simple enough. The only tricky part was making sure it was a non-nested pair
+To find the split index was even easier. Just had to find the first integer element >= 10
+Then came the most complex function. An explosion. This involved a few things. First to find the snailfish directly left and right of the exploded pair. Then to "explode", i.e, add the left exploded pair to left, put a zero where the pair was, and add the right exploded pair to the right. The rest of the list was copied as it was. Basically involved a lot of appending and list concatenation with sublists.
+Once again, splitting was simpler. Just had to replace the split index element with a pair
+To implement reducing was just a matter of following the instructions. First, explode as many as you can. Then split as many as you can, but after each split, do the explosions again.
+Adding two snailfish lists was even simpler. Just had to concatenate the lists with brackets around and a comma in the middle.
+Finally was the get magnitude function, for which I used recursion
+
+Now it was finally time to solve the parts
+For part 1, I had to iterate through the input and keep adding, then reducing. Finally, I had to calculate the magnitude.
+For part 2, I had to iterate through the input twice, adding each pair and find the largest magnitude produced

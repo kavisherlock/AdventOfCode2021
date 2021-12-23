@@ -1,0 +1,10 @@
+This was a classic example of me overthinking the problem, trying to apply all kinds of maths and physics.
+That said, a little bit of physics knowledge did help. Particularly, knowing that the y velocity I throw the probe by, it'll come right back down to zero with the negative of one more than that velocity
+This basically solved part 1 without any real code needed. To make it reach the highest y, I needed to throw the probe up with the highest velocity such that it still lands in the target area. Since it comes back down with one more than the velocity I throw it up with, I needed to throw it up by one minus the lowest point in the target
+So 117, since my target's lower bound was -118. To find how high it reached is just n(n+1)/2.
+For part 2, again I tried applying some maths, but in the end, it was just easier to try out all the possible velocities between the lower and upper bounds of x and y velocities.
+The min x velocity is the minimum velocity it takes to reach the leftmost point, which I found by solving the quadratic equation n(n+1) / 2 = min_tatget_x.
+The max x velocity is just the right-most point (ie directly throwing the probe there)
+The min y velocity is just the bottom-most point (ie directly throwing the probe there)
+The max y velociy is the one we found in part 1, since any higher will overshoot the target
+After I had these, I just made a function to see how many valocity pairs does it reach the target area for
