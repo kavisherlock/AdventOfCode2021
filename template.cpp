@@ -7,11 +7,11 @@ using namespace std;
 int main () {
   ifstream myfile;
   myfile.open ("../input");
-  vector<string> guardLogs;
+  vector<string> lines;
   if (myfile.is_open()) {
-    string mystring;
-    while(getline(myfile, mystring)) {
-      guardLogs.push_back(mystring);
+    string lineString;
+    while(getline(myfile, lineString)) {
+      lines.push_back(lineString);
     }
   }
   myfile.close();
